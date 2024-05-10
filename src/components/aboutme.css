@@ -1,0 +1,86 @@
+.aboutpage {
+  height: 120vh; 
+  
+}
+/* aboutme.css */
+.page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1;
+  margin-right: 20px; /* Adjust the spacing between content and image */
+}
+
+.image-container {
+  flex: 1;
+  max-width: 300px; /* Adjust the maximum width of the image container */
+  margin-top: 20px; /* Add spacing between content and image */
+}
+
+.profile-image {
+  width: 100%;
+  height: auto; /* Ensure the height adjusts automatically */
+  max-width: 60%; /* Ensure the image does not exceed its container */
+  border-radius: 50%; /* Make the image round */
+}
+.details{
+  color: #ffc107 ;
+  text-align: left;
+  padding: 50px;
+    max-width: 700px;
+  font-family: 'Roboto Mono', monospace; 
+}
+/* Remove arrow-shaped edges and keep rectangular outline border for paragraphs */
+p {
+  padding: 20px; /* Adjust padding as needed */
+  border: 2px solid #000; /* Add rectangular outline border to paragraphs */
+}
+.aboutpage h2{
+  padding-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .image-container {
+    margin-top: 0;
+    
+  }
+  .profile-image{
+   
+    margin-left: 50px;
+  }
+
+  .page {
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+  }
+
+  .content {
+    margin-right: 0; /* Remove right margin for content on smaller screens */
+  }
+
+  .details {
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  h3 {
+    font-size: 1.5rem; /* Decrease heading font size for better readability on smaller screens */
+  }
+
+  p {
+    font-size: 1rem; /* Decrease paragraph font size for better readability on smaller screens */
+    line-height: 1.5; /* Increase line height for better spacing */
+    margin-bottom: 20px; /* Add margin between paragraphs for better spacing */
+  }
+
+  h2 {
+    font-size: 2rem; /* Decrease heading font size for better readability on smaller screens */
+  }
+}

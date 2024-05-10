@@ -1,0 +1,49 @@
+/* home.css */
+nav {
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+ul {
+  list-style-type: none; 
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+li {
+  display: inline;
+  margin-right: 20px; /* Adjust margin between list items as needed */
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+a {
+  text-decoration: none; 
+  color: #ffc107;
+  font-size: 20px; /* Adjust font size as needed */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-family: 'Roboto Mono', monospace; /* Use Roboto Mono font */
+  
+}
+
+a:hover {
+  color: #ffc107; 
+}
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 767px) {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    flex: 1;
+    margin-bottom: 10px; /* Adjust margin between list items on smaller screens */
+    margin-right: 0; /* Remove right margin to prevent overflow */
+  }
+
+  a {
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 16px;
+  }
+}

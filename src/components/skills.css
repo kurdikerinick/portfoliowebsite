@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.page {
+  padding: 20px;
+  height: 80vh;
+}
+
+.page h2 {
+  color: #ffc107;
+  padding-bottom: 50px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Roboto Mono', monospace;
+  width: 700px;
+  margin: 0 auto; /* Center the container */
+  border: 2px solid #ffc107; border-radius: 25px; padding: 20px;
+
+}
+
+.skill-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.skill-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffc107;
+}
+
+.skill-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-column ul li {
+  margin-bottom: 5px;
+}
+
+/* Font Awesome icons */
+.fas,
+.fab {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1.2em;
+  margin-right: 5px;
+  color: #ffc107;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+/* Center-align text with icons */
+.skill-column ul li {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+    padding-right: 10px;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .skills-container {
+  
+    max-width: 250px;
+  }
+
+  .skill-column {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .skill-column ul li{
+    margin-right: 8px;
+  }
+}
