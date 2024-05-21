@@ -1,6 +1,22 @@
-/* skills.css */
+.page-container {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.pages {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
 .page {
-    height: 100vh; /* Set each page to take up the full viewport height */
-   
-  }
-  
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: none;
+}
+
+.page.active {
+  display: block;
+}

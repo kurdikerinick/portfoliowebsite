@@ -36,7 +36,7 @@ const Home = () => {
       <div id="about" className="page aboutme-section">
         <AboutMe />
       </div>
-      <div  id="skills" className="page skills-section">
+      <div id="skills" className="page skills-section">
         <Skills />
       </div>
       {/* <div id="portfolio" className="page portfolio-section">
@@ -64,6 +64,8 @@ const Home = () => {
         <div className="line"></div> {/* This div draws the line */}
         <p>Copyright © {new Date().getFullYear()} Nikhita Kurdikeri</p>
       </footer>
+      {/* New styled div */}
+      <div className="styled-div"></div>
     </div>
   );
 };
